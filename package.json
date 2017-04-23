@@ -1,0 +1,36 @@
+{
+  "name": "avoriaz-mocha-example",
+  "version": "1.0.0",
+  "description": "example project using avoriaz with mocha-webpack to test Vue.js components",
+  "scripts": {
+    "lint:fix": "standard --fix",
+    "test": "tape -r babel-register -r ./test/helpers/.setup.js test/*.spec.js"
+  },
+  "tape": {
+    "require": [
+      "./test/helpers/.setup.js"
+    ]
+  },
+  "author": "Edd Yerburgh",
+  "license": "MIT",
+  "devDependencies": {
+    "avoriaz": "^1.9.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.24.1",
+    "browser-env": "^2.0.30",
+    "css-loader": "^0.26.1",
+    "standard": "^10.0.2",
+    "tape": "^4.6.3",
+    "vue-loader": "^11.3.4",
+    "vue-node": "^1.1.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "vue": "^2.2.6",
+    "vue-template-compiler": "^2.2.6"
+  }
+}
